@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(15,15,15);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 12fr;
+}
+.navbar{
+    grid-row:1/2;
+    grid-column: 1/6;
+    display: flex;
+    justify-content: space-between;
+    padding:3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+.navbar .start i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mid input{
+    background: transparent;
+    border: 1px solid rgb(34,34,34);
+    outline: none;
+    padding: 10px;
+    height: 40px;
+    border-radius: 3px;
+    width: 600px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.mid i{
+    font-size: 20px;
+    width: 50px;
+    padding: 9px;
+    background-color: rgb(34,34,34);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+}
+.end i{
+    font-size: 25px;
+}
+.end .fa-user{
+    font-size: 17px;
+    border-radius: 50%;
+    border: 1px solid white;   
+    padding: 5px;
+}
+.leftbar{
+    grid-row: 2/4;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 10px;
+}
+.leftbar .top i{
+    font-size: 20px;
+}
+.top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.fa-house{
+    font-size: 25px;
+}
+.top h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.shorts svg{
+    display: inline-block;
+}
+.shorts h3{
+    display: inline-block;
+}
+
+.slider{
+    grid-row: 2/3;
+    grid-column: 2/7;
+}
+.vid{
+    grid-row: 3/4;
+    grid-column: 2/6;
+}
+.divider{
+    width: 200px;
+    height: 1px;
+    background-color: rgb(64, 64, 64);
+}
+#history{
+    background-color: transparent;
+    font-size: 25px;
+}
+#playlist{
+    background-color: transparent;
+    font-size: 25px;
+}
+.sidemenu{
+    margin-top: 10px;
+}
+.mid-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left:-30px
+}
+.sidemenu h3{
+    font-weight: 100;
+}
+.play{
+    margin-left: 40px;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: scroll;
+    scrollbar-width:none;
+    margin-top: 20px;
+}
+.slide{
+    width: fit-content;
+    height: 40px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vid{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 30px;
+    justify-content:flex-start;
+    gap: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    flex-wrap: wrap;
+}
+.thumbnail{
+    width: 420px;
+    height: 227px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;;
+}
+.card{
+    width: 420px;
+    height: 350px;
+    background-color: transparent;
+    border-radius:20px;
+    position: relative;
+}
+.text{
+    width: 100%;
+    height:90px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    align-content: center;
+}
+.profile{
+    display: flex;
+    margin-right: 20px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.logo{
+    width: 35px;
+    height: 35px;
+    border:2px solid rgb(64, 64, 64);
+    width: 35px;
+    height: 35px;
+    
+    border-radius: 50%;
+}
+.title{
+    padding: 13px;
+    font-size: larger;
+    line-height: 1.6rem;
+}
